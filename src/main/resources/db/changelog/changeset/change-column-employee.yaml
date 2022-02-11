@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: change-column-employee
+      author: Farkhat
+      changes:
+        - renameColumn:
+            tableName: employee
+            newColumnName: first_name
+            oldColumnName: firstName
+        - renameColumn:
+            tableName: employee
+            newColumnName: last_name
+            oldColumnName: lastName

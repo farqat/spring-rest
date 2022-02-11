@@ -1,0 +1,31 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-employee
+      author: Farkhat
+      changes:
+        - createTable:
+            tableName: employee
+            columns:
+              - column:
+                  name: empid
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: firstName
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: lastName
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: email
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+
